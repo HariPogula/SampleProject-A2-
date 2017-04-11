@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="text-primary text-center">This is Twitter Page</h1>
+    <hr/>
+<div *ngFor="#tweet of tweets">
+   <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="{{ tweet.imageUrl }}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading text-info">
+      {{ tweet.author }} <span class="handle text-success">{{ tweet.handle }}</span>
+    </h4>
+    {{ tweet.body }}
+    <div> <like [totalLikes]="tweet.totalLikes" [iLike]="tweet.iLike"></like>
+    </div>
+   
+  </div>
+  <hr/>
+</div> 
+</div><!-- -->  
+</div>    
+

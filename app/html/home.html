@@ -1,0 +1,16 @@
+
+<div class="container">
+    <h1 class="text-primary text-center">This is Home Page</h1>
+    <hr/>
+    
+    <div class="jumbotron">
+       <strong><h3 class="text-warning"> If You Like it,Hit this Star  </h3></strong>
+        <i class="glyphicon"
+          [class.glyphicon-star-empty]="!isvalid" 
+          [class.glyphicon-star]="isvalid"
+          (click)="Change()"
+         ></i>
+        <strong>{{count}}</strong>
+    <div>
+
+</div>
